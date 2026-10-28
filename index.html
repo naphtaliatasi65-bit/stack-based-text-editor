@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack-Based Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="editor.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Stack-Based Text Editor</h1>
+            <p>A text editor powered by C++ stacks and WebAssembly.</p>
+        </header>
+
+        <section class="editor-card">
+            <label for="editor">Your document</label>
+
+            <textarea
+                id="editor"
+                placeholder="Start typing your text here..."
+                spellcheck="true"
+            ></textarea>
+
+            <div class="buttons">
+                <button id="undoBtn" type="button">↶ Undo</button>
+                <button id="redoBtn" type="button">↷ Redo</button>
+                <button id="clearBtn" type="button">Clear</button>
+            </div>
+
+            <div class="status">
+                <span id="message">Loading C++ editor...</span>
+                <span id="wordCount">0 words</span>
+            </div>
+        </section>
+
+        <footer>
+            <p>Data Structures Project · Stack (LIFO)</p>
+        </footer>
+    </main>
+</body>
+</html>
